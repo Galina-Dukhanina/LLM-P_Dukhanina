@@ -111,3 +111,30 @@ uv run uvicorn app.main:app --reload --host 127.0.0.1 --port 9000
 ```bash
 ruff check .
 ```
+
+---
+
+## Скриншоты работы API
+
+Скриншоты демонстрируют использование email формата `student_surname@email.com` при регистрации.
+
+### Регистрация пользователя (`POST /auth/register`)
+![POST /auth/register](docs/screenshots/01_register.png)
+
+### Логин и получение JWT (`POST /auth/login`)
+![POST /auth/login](docs/screenshots/02_login_token.png)
+
+### Авторизация в Swagger (Authorize)
+![Swagger Authorize](docs/screenshots/03_swagger_authorize.png)
+
+### Вызов чата (`POST /chat`)
+![POST /chat](docs/screenshots/04_chat_post.png)
+
+### Получение истории (`GET /chat/history`)
+![GET /chat/history](docs/screenshots/05_chat_history_get.png)
+
+### Удаление истории (`DELETE /chat/history`)
+![DELETE /chat/history](docs/screenshots/06_chat_history_delete.png)
+
+### Проверка, что история очищена (`GET /chat/history`)
+![GET /chat/history after delete](docs/screenshots/07_chat_history_delete.png)
