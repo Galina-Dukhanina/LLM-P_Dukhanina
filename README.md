@@ -70,6 +70,8 @@ OPENROUTER_SITE_URL=https://example.com
 OPENROUTER_APP_NAME=llm-fastapi-openrouter
 ```
 
+> Примечание по модели: в задании указана `stepfun/step-3.5-flash:free`, но на момент выполнения работы OpenRouter возвращал ошибку `404 No endpoints found...` для этой модели. Поэтому для демонстрации работоспособности интеграции использована другая доступная free‑модель.
+
 > `.env` не коммитится (секреты). В репозитории хранится только `.env.example`.
 
 ### 4) Запуск приложения
